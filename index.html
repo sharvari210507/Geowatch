@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoWatch: Community Alert System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>GeoWatch: Community Safety Portal 🚨</h1>
+    </header>
+
+    <main>
+        <section class="reporting-form">
+            <h2>Report a Local Incident (Citizen)</h2>
+            
+            <div class="location-status-note">
+                <strong>📍 Location Status:</strong> Location services are active and verified for secure reporting.
+            </div>
+
+            <form id="incidentForm">
+                <label for="incidentType">Incident Type:</label>
+                <select id="incidentType" required>
+                    <option value="">-- Select --</option>
+                    <option value="Suspicious Activity">Suspicious Activity</option>
+                    <option value="Utility Failure">Utility Failure (e.g., Street Light Out)</option>
+                    <option value="Road Hazard">Road Hazard (e.g., Large Pothole)</option>
+                    <option value="Other Safety Concern">Other Safety Concern</option>
+                </select><br><br>
+
+                <label for="details">Details:</label>
+                <textarea id="details" rows="3" placeholder="Describe the concern and exact location..." required></textarea><br><br>
+
+                <label for="reporterID">Reporter ID (Verified Account):</label>
+                <input type="text" id="reporterID" value="USER_947_VERIFIED" readonly><br><br>
+                
+                <button type="submit">Submit Alert Report</button>
+            </form>
+        </section>
+        
+        <section class="alerts-display">
+            <h2>Local Alerts (500m Radius)</h2>
+            <div id="localAlerts">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 GeoWatch Project | Design Thinking Submission</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

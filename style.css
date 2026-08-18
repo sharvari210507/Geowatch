@@ -1,0 +1,81 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f3f6;
+    color: #333;
+}
+
+header {
+    background-color: #dc3545; /* Red for alerts/safety */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 40px;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Style for Location Status Note */
+.location-status-note {
+    background-color: #d4edda; /* Light green */
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: #155724;
+    font-size: 0.9em;
+}
+
+.alert-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fff3f3; /* Light red for alerts */
+    border: 1px solid #dc3545;
+}
+
+.alert-item h3 {
+    margin-top: 0;
+    color: #dc3545;
+}
+
+select, textarea, input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff; /* Blue for action/submit */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%; 
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
